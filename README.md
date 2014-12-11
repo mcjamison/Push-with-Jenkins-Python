@@ -1,3 +1,3 @@
 # Test
 
-This is a test project for Push-to-Deploy with Jenkins.
+This is another test project for Push-to-Deploy with Jenkins.
