@@ -11,7 +11,13 @@ class ByePage(webapp2.RequestHandler):
         self.response.headers['Content-Type'] = 'text/plain'
         self.response.write('Goodbye, Cruel World!')
 
+class YoPage(webapp2.RequestHandler):
+    def get(self):
+        self.response.headers['Content-Type'] = 'text/plain'
+        self.response.write('Yo.')
+
 application = webapp2.WSGIApplication([
     ('/', MainPage),
     ('/bye', ByePage),
+    ('/yo', YoPage),
 ], debug=True)
